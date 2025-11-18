@@ -5,7 +5,7 @@ return(
     <>
      <hr className="w-[90%] mx-auto h-[4px] bg-[#00df9a] border-0 rounded-4xl my-6 mt-40 mb-[-10%]" />
  
-     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8  bg-black mt-70 text-white">
+     <div id="about" className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-8  bg-black mt-70 text-white">
    
       <div className="flex justify-center">
         <img

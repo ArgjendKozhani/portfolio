@@ -10,7 +10,7 @@ import Bootstrap from '../assets/bootstrap.png';
     <> 
     <hr className="w-[90%] mx-auto h-[4px] bg-[#00df9a] border-0 rounded-4xl my-6 mt-40 mb-[-10%]" />
 
-    <div className="bg-black text-white px-8 py-16 mt-40">
+    <div id='skills' className="bg-black text-white px-8 py-16 mt-40">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-[#00df9a] mb-30">Skills</h2>
 

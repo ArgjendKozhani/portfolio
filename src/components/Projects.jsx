@@ -61,9 +61,8 @@ const Projects = () => {
     <>
       <div style={{ height: '40px' }}></div>
       <section id="projects" style={{ paddingTop: '64px', paddingBottom: '64px' }} className="px-6 relative">
-        {/* Section Header */}
         <div className="max-w-7xl mx-auto text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent relative inline-block mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent relative inline-block mb-6 pb-2">
             Projects
           </h2>
           
@@ -71,8 +70,6 @@ const Projects = () => {
             A selection of my recent work and side projects
           </p>
         </div>
-
-        {/* Projects Grid */}
         <div className="flex justify-center px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-sm md:max-w-2xl lg:max-w-5xl">
           {projects.map((project, index) => (
@@ -83,7 +80,6 @@ const Projects = () => {
                        transform hover:-translate-y-2 transition-all duration-300 z-10 hover:z-30
                        shadow-xl hover:shadow-2xl hover:shadow-purple-500/30"
             >
-              {/* Project Image */}
               <div className="relative h-36 overflow-hidden">
                 <img
                   src={project.image}
@@ -91,16 +87,12 @@ const Projects = () => {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
-                
-                {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute top-3 right-3 px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-bold rounded-full shadow-lg">
                     Featured
                   </div>
                 )}
               </div>
-
-              {/* Project Info */}
               <div className="p-4">
                 <h3 className="text-base font-bold text-white mb-1.5 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all">
                   {project.title}
@@ -108,8 +100,6 @@ const Projects = () => {
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">
                   {project.description}
                 </p>
-
-                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech) => (
                     <span
@@ -122,8 +112,6 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* Action Button */}
                 {project.link ? (
                   <a
                     href={project.link}
@@ -159,8 +147,6 @@ const Projects = () => {
           ))}
           </div>
         </div>
-
-        {/* GitHub CTA */}
         <div className="flex flex-col items-center mt-12 text-center">
           <p className="mt-6 text-gray-400 text-lg text-center mb-8">
             Want to see more? Check out my GitHub for additional projects
@@ -169,9 +155,9 @@ const Projects = () => {
             href="https://github.com/ArgjendKozhani"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-purple-500 
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-purple-500 
                      text-purple-400 font-bold rounded-lg hover:bg-purple-500 hover:text-white 
-                     transition-all duration-300 shadow-lg hover:shadow-purple-500/50"
+                     transition-all duration-300 shadow-lg hover:shadow-purple-500/50 w-full sm:w-auto"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path

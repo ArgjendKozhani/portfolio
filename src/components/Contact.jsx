@@ -39,7 +39,6 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-12 w-full max-w-3xl mx-auto items-stretch">
-            {/* Left: Form (spans two columns) */}
             <div className="p-8 bg-gradient-to-br from-gray-900/75 to-gray-900/60 border border-gray-800 rounded-3xl shadow-xl h-full flex flex-col w-full backdrop-blur-sm ring-1 ring-gray-800">
               <h3 className="text-2xl font-semibold text-white mb-1">Send a message</h3>
               <p className="text-gray-300 mb-4">Short and sweet — I reply quickly.</p>
@@ -89,7 +88,7 @@ const Contact = () => {
                 <div className="mt-8 mb-8 flex flex-col items-center gap-3">
                   <button
                     type="submit"
-                    className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-lg font-semibold rounded-lg hover:scale-[1.01] transition-transform duration-150 shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-400/30"
+                    className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-base font-semibold rounded-lg hover:scale-[1.01] transition-transform duration-150 shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-400/30 whitespace-nowrap"
                   >
                     {formStatus === 'sending' ? 'Opening...' : 'Send Message'}
                   </button>
@@ -101,8 +100,6 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-
-            {/* Right: Contact info column */}
             <div className="flex flex-col gap-4 w-full">
               <div className="p-5 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-2xl shadow-sm h-full flex items-center justify-center w-full">
                 <div className="flex items-center gap-3 w-auto justify-center mr-2">
@@ -144,7 +141,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-md font-semibold text-white">Quick Contact</h4>
                   <div className="text-sm text-gray-200 mt-2">
-                    <a href="mailto:argjendkozhani15@gmail.com" className="block hover:text-indigo-200">argjendkozhani15@gmail.com</a>
+                    <a href="mailto:argjendkozhani15@gmail.com" className="block hover:text-indigo-200 break-all">argjendkozhani15@gmail.com</a>
                     <a href="tel:+38345811336" className="block hover:text-indigo-200">+383 45 811 336</a>
                   </div>
                 </div>

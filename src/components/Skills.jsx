@@ -69,7 +69,6 @@ const Skills = () => {
       <section id="skills" style={{ paddingTop: '64px', paddingBottom: '64px' }} className="px-6 relative">
 
         <div className="max-w-7xl mx-auto relative z-10">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-6">
               Technical Skills
@@ -78,52 +77,40 @@ const Skills = () => {
               Technologies and tools I use to build amazing web experiences
             </p>
           </div>
-
-          {/* Skills Grid */}
           <div className="flex justify-center px-6 mt-8">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 w-full max-w-4xl">
               {skills.map((skill, index) => (
                 <div
                 key={skill.name}
                 className="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 
-                         p-8 rounded-2xl border border-gray-700 hover:border-purple-500 
+                         p-4 sm:p-6 md:p-8 rounded-2xl border border-gray-700 hover:border-purple-500 
                          transform hover:-translate-y-2 transition-all duration-300 z-10 hover:z-30
                          shadow-xl hover:shadow-2xl hover:shadow-purple-500/30"
                 style={{
                   animationDelay: `${index * 80}ms`
                 }}
               >
-                {/* Glow effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
-                
-                {/* Content */}
                 <div className="relative flex flex-col items-center justify-center h-full">
-                  {/* Icon */}
                   {skill.icon ? (
                     <img
                       src={skill.icon}
                       alt={skill.name}
-                      className="w-20 h-20 mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
+                      className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mb-3 sm:mb-5 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
                     />
                   ) : (
                     <div 
-                      className="w-20 h-20 mb-6 text-purple-400 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
+                      className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mb-3 sm:mb-5 text-purple-400 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
                       dangerouslySetInnerHTML={{ __html: skill.svg }}
                     />
                   )}
-                  
-                  {/* Skill Name */}
-                  <h3 className="text-lg font-bold text-white text-center group-hover:text-purple-400 transition-colors">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-white text-center group-hover:text-purple-400 transition-colors leading-tight">
                     {skill.name}
                   </h3>
-                  
-                  {/* Category Badge */}
-                  <span className="mt-3 px-3 py-1 text-sm font-medium text-purple-400 bg-purple-500/10 rounded-full border border-purple-500/30">
+                  <span className="mt-2 sm:mt-3 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm font-medium text-purple-400 bg-purple-500/10 rounded-full border border-purple-500/30">
                     {skill.category}
                   </span>
                 </div>
-
-                {/* Corner accent */}
                 <div className="absolute top-2 right-2 w-2 h-2 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             ))}

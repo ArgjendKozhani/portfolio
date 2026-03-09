@@ -10,7 +10,6 @@ import './App.css'
 function App() {
   return (
     <div className="min-h-screen relative">
-      {/* Global gradient overlay with animated orbs */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20"></div>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full filter blur-[150px] opacity-20 animate-pulse"></div>

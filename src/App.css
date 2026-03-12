@@ -15,12 +15,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #a855f7, #3b82f6);
+  background: linear-gradient(180deg, #60a5fa, #1d4ed8);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #9333ea, #2563eb);
+  background: linear-gradient(180deg, #3b82f6, #1e40af);
 }
 
 /* Animations */
@@ -69,23 +69,23 @@ html {
   animation: scaleIn 0.6s ease-out forwards;
 }
 
-/* Selection color with purple theme */
+/* Selection color with blue theme */
 ::selection {
-  background: linear-gradient(90deg, #a855f7, #ec4899);
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: linear-gradient(90deg, #a855f7, #ec4899);
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
   color: #fff;
 }
 
-/* Focus styles for accessibility with purple theme */
+/* Focus styles for accessibility with blue theme */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #a855f7;
+  outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 

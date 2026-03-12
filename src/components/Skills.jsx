@@ -70,7 +70,7 @@ const Skills = () => {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 bg-clip-text text-transparent mb-6">
               Technical Skills
             </h2>
             <p className="text-gray-400 text-xl">
@@ -83,14 +83,14 @@ const Skills = () => {
                 <div
                 key={skill.name}
                 className="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 
-                         p-4 sm:p-6 md:p-8 rounded-2xl border border-gray-700 hover:border-purple-500 
+                         p-4 sm:p-6 md:p-8 rounded-2xl border border-gray-700 hover:border-blue-500 
                          transform hover:-translate-y-2 transition-all duration-300 z-10 hover:z-30
-                         shadow-xl hover:shadow-2xl hover:shadow-purple-500/30"
+                         shadow-xl hover:shadow-2xl hover:shadow-blue-500/30"
                 style={{
                   animationDelay: `${index * 80}ms`
                 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
                 <div className="relative flex flex-col items-center justify-center h-full">
                   {skill.icon ? (
                     <img
@@ -100,18 +100,18 @@ const Skills = () => {
                     />
                   ) : (
                     <div 
-                      className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mb-3 sm:mb-5 text-purple-400 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
+                      className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mb-3 sm:mb-5 text-blue-400 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300"
                       dangerouslySetInnerHTML={{ __html: skill.svg }}
                     />
                   )}
-                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-white text-center group-hover:text-purple-400 transition-colors leading-tight">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-white text-center group-hover:text-blue-400 transition-colors leading-tight">
                     {skill.name}
                   </h3>
-                  <span className="mt-2 sm:mt-3 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm font-medium text-purple-400 bg-purple-500/10 rounded-full border border-purple-500/30">
+                  <span className="mt-2 sm:mt-3 px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm font-medium text-blue-400 bg-blue-500/10 rounded-full border border-blue-500/30">
                     {skill.category}
                   </span>
                 </div>
-                <div className="absolute top-2 right-2 w-2 h-2 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-2 right-2 w-2 h-2 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             ))}
             </div>

@@ -45,12 +45,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/95 backdrop-blur-md shadow-lg shadow-purple-500/20 border-b border-purple-500/20" : "bg-transparent"
+        scrolled ? "bg-black/95 backdrop-blur-md shadow-lg shadow-blue-500/20 border-b border-blue-500/20" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between text-white items-center h-24 max-w-[1240px] mx-auto px-6">
         <a href="#hero" className="cursor-pointer" style={{ textDecoration: 'none' }}>
-          <h1 className="text-2xl md:text-3xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-bold hover:from-purple-300 hover:to-blue-300 transition-all" style={{ textDecoration: 'none' }}>
+          <h1 className="text-2xl md:text-3xl bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent font-bold hover:from-blue-200 hover:to-blue-400 transition-all" style={{ textDecoration: 'none' }}>
             Argjend Kozhani
           </h1>
         </a>
@@ -61,24 +61,24 @@ const Navbar = () => {
                 href={link.href}
                 className={`px-5 py-2 rounded-lg transition-all duration-300 relative group ${
                   activeSection === link.href.slice(1)
-                    ? "text-purple-400"
-                    : "text-white hover:text-purple-300"
+                    ? "text-blue-400"
+                    : "text-white hover:text-blue-300"
                 }`}
               >
                 {link.label}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-300 ${
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-500 transition-all duration-300 ${
                   activeSection === link.href.slice(1) ? "w-full" : "w-0 group-hover:w-full"
                 }`}></span>
               </a>
             </li>
           ))}
-          <li className="ml-4 pl-4 border-l border-purple-500/30">
+          <li className="ml-4 pl-4 border-l border-blue-500/30">
             <a
               href={CV}
               download
-              className="px-5 py-2.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg 
-                       hover:from-purple-500 hover:to-blue-500 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/50 
-                       transition-all duration-300 shadow-md shadow-purple-500/30 inline-block text-sm tracking-wide"
+              className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg 
+                       hover:from-blue-500 hover:to-blue-600 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50 
+                       transition-all duration-300 shadow-md shadow-blue-500/30 inline-block text-sm tracking-wide"
             >
               Download CV
             </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
         </ul>
         <button
           onClick={handleNav}
-          className="block md:hidden cursor-pointer hover:text-purple-400 transition-colors p-2 rounded-lg hover:bg-purple-500/10"
+          className="block md:hidden cursor-pointer hover:text-blue-400 transition-colors p-2 rounded-lg hover:bg-blue-500/10"
           aria-label="Toggle menu"
         >
           {nav ? <AiOutlineClose size={22} /> : <AiOutlineMenu size={22} />}
@@ -107,19 +107,19 @@ const Navbar = () => {
           style={{ zIndex: 60 }}
         >
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute -top-16 -left-16 w-56 h-56 bg-purple-600 rounded-full blur-[80px] opacity-20"></div>
+            <div className="absolute -top-16 -left-16 w-56 h-56 bg-blue-600 rounded-full blur-[80px] opacity-20"></div>
             <div className="absolute bottom-20 -right-10 w-40 h-40 bg-blue-600 rounded-full blur-[70px] opacity-15"></div>
-            <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-pink-600 rounded-full blur-[60px] opacity-10"></div>
+            <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-blue-500 rounded-full blur-[60px] opacity-10"></div>
           </div>
           <div className="relative px-6 pt-8 pb-6 border-b border-white/5">
             <button
               onClick={() => setNav(false)}
-              className="absolute top-5 right-5 p-1.5 rounded-full bg-white/5 hover:bg-purple-500/20 text-gray-400 hover:text-purple-400 transition-all duration-200"
+              className="absolute top-5 right-5 p-1.5 rounded-full bg-white/5 hover:bg-blue-500/20 text-gray-400 hover:text-blue-400 transition-all duration-200"
               aria-label="Close menu"
             >
               <AiOutlineClose size={16} />
             </button>
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center shadow-lg shadow-purple-500/30 mb-4">
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30 mb-4">
               <span className="text-white font-bold text-lg tracking-tight">AK</span>
             </div>
 
@@ -144,20 +144,20 @@ const Navbar = () => {
                     onClick={() => setNav(false)}
                     className={`group flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                       isActive
-                        ? "bg-gradient-to-r from-purple-600/30 to-blue-600/10 text-white shadow-inner"
+                        ? "bg-gradient-to-r from-blue-600/30 to-blue-700/10 text-white shadow-inner"
                         : "text-gray-400 hover:bg-white/5 hover:text-white"
                     }`}
                   >
                     <span className={`flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-200 ${
                       isActive
-                        ? "bg-gradient-to-br from-purple-500 to-blue-500 text-white shadow-md shadow-purple-500/30"
-                        : "bg-white/5 text-gray-500 group-hover:bg-purple-500/20 group-hover:text-purple-400"
+                        ? "bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-md shadow-blue-500/30"
+                        : "bg-white/5 text-gray-500 group-hover:bg-blue-500/20 group-hover:text-blue-400"
                     }`}>
                       <Icon size={15} />
                     </span>
                     {link.label}
                     {isActive && (
-                      <span className="ml-auto w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                      <span className="ml-auto w-1.5 h-1.5 rounded-full bg-blue-400"></span>
                     )}
                   </a>
                 </li>
@@ -173,7 +173,7 @@ const Navbar = () => {
               onClick={() => setNav(false)}
               className="group flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-white transition-all duration-200"
             >
-              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 text-gray-500 group-hover:bg-purple-500/20 group-hover:text-purple-400 transition-all duration-200">
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 text-gray-500 group-hover:bg-blue-500/20 group-hover:text-blue-400 transition-all duration-200">
                 <FiGithub size={14} />
               </span>
               GitHub
@@ -189,10 +189,10 @@ const Navbar = () => {
               href={CV}
               download
               className="flex items-center justify-center gap-2 w-full py-3 
-                       bg-gradient-to-r from-purple-600 to-blue-600 
-                       hover:from-purple-500 hover:to-blue-500
+                       bg-gradient-to-r from-blue-600 to-blue-700 
+                       hover:from-blue-500 hover:to-blue-600
                        text-white font-semibold rounded-xl text-sm tracking-wide
-                       shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40
+                       shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40
                        transition-all duration-300"
             >
               <FiDownload size={15} />

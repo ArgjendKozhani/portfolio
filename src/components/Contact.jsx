@@ -33,7 +33,7 @@ const Contact = () => {
       <section id="contact" className="px-6 relative" style={{ paddingTop: '64px', paddingBottom: '64px' }}>
         <div className="w-full max-w-7xl mx-auto px-6 flex flex-col items-center">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 bg-clip-text text-transparent mb-8">
               Get In Touch
             </h2>
           </div>
@@ -52,7 +52,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent h-12 shadow-sm"
+                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent h-12 shadow-sm"
                     placeholder="Your name"
                   />
                 </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent h-12 shadow-sm"
+                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent h-12 shadow-sm"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none h-40 shadow-sm"
+                    className="w-full px-4 py-3 bg-gray-800/60 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none h-40 shadow-sm"
                     placeholder="Tell me about your project or opportunity..."
                   />
                 </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                 <div className="mt-8 mb-8 flex flex-col items-center gap-3">
                   <button
                     type="submit"
-                    className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-base font-semibold rounded-lg hover:scale-[1.01] transition-transform duration-150 shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-400/30 whitespace-nowrap"
+                    className="inline-flex w-full md:w-auto items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base font-semibold rounded-lg hover:scale-[1.01] transition-transform duration-150 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-400/30 whitespace-nowrap"
                   >
                     {formStatus === 'sending' ? 'Opening...' : 'Send Message'}
                   </button>
@@ -103,13 +103,13 @@ const Contact = () => {
             <div className="flex flex-col gap-4 w-full">
               <div className="p-5 bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-2xl shadow-sm h-full flex items-center justify-center w-full">
                 <div className="flex items-center gap-3 w-auto justify-center mr-2">
-                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 flex-shrink-0">
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-400 flex-shrink-0">
                     <img src={Location} alt="Location" className="w-5 h-5 filter brightness-0 invert" />
                   </div>
                   <div className="text-center">
                     <h4 className="text-md font-semibold text-white">Based in Kosovo</h4>
                     <p className="text-sm text-gray-200">Lipjan</p>
-                    <a href="tel:+38345811336" className="mt-1 inline-block text-indigo-200">+383 45 811 336</a>
+                    <a href="tel:+38345811336" className="mt-1 inline-block text-blue-200">+383 45 811 336</a>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ const Contact = () => {
                       href={s.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-800/60 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-pink-500 rounded-lg transition-colors flex items-center justify-center"
+                      className="w-12 h-12 sm:w-14 sm:h-14 bg-gray-800/60 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-400 rounded-lg transition-colors flex items-center justify-center"
                       aria-label={s.name}
                       title={s.name}
                     >
@@ -141,8 +141,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-md font-semibold text-white">Quick Contact</h4>
                   <div className="text-sm text-gray-200 mt-2">
-                    <a href="mailto:argjendkozhani15@gmail.com" className="block hover:text-indigo-200 break-all">argjendkozhani15@gmail.com</a>
-                    <a href="tel:+38345811336" className="block hover:text-indigo-200">+383 45 811 336</a>
+                    <a href="mailto:argjendkozhani15@gmail.com" className="block hover:text-blue-200 break-all">argjendkozhani15@gmail.com</a>
+                    <a href="tel:+38345811336" className="block hover:text-blue-200">+383 45 811 336</a>
                   </div>
                 </div>
               </div>

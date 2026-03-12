@@ -62,7 +62,7 @@ const Projects = () => {
       <div style={{ height: '40px' }}></div>
       <section id="projects" style={{ paddingTop: '64px', paddingBottom: '64px' }} className="px-6 relative">
         <div className="max-w-7xl mx-auto text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent relative inline-block mb-6 pb-2">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-300 via-blue-400 to-blue-600 bg-clip-text text-transparent relative inline-block mb-6 pb-2">
             Projects
           </h2>
           
@@ -75,10 +75,10 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="group relative bg-gradient-to-br from-gray-900 via-purple-950/20 to-gray-900 rounded-xl 
-                       overflow-hidden border border-gray-800 hover:border-purple-500 
+              className="group relative bg-gradient-to-br from-gray-900 via-blue-950/20 to-gray-900 rounded-xl 
+                       overflow-hidden border border-gray-800 hover:border-blue-500 
                        transform hover:-translate-y-2 transition-all duration-300 z-10 hover:z-30
-                       shadow-xl hover:shadow-2xl hover:shadow-purple-500/30"
+                       shadow-xl hover:shadow-2xl hover:shadow-blue-500/30"
             >
               <div className="relative h-36 overflow-hidden">
                 <img
@@ -88,13 +88,13 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
                 {project.featured && (
-                  <div className="absolute top-3 right-3 px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-bold rounded-full shadow-lg">
+                  <div className="absolute top-3 right-3 px-2 py-1 bg-gradient-to-r from-blue-500 to-blue-400 text-white text-xs font-bold rounded-full shadow-lg">
                     Featured
                   </div>
                 )}
               </div>
               <div className="p-4">
-                <h3 className="text-base font-bold text-white mb-1.5 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all">
+                <h3 className="text-base font-bold text-white mb-1.5 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-300 group-hover:to-blue-500 group-hover:bg-clip-text transition-all">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-3 leading-relaxed">
@@ -104,8 +104,8 @@ const Projects = () => {
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-purple-900/30 border border-purple-500/30 text-purple-400 
-                               text-xs rounded-full font-medium hover:bg-purple-500 hover:text-white hover:border-purple-500
+                      className="px-2 py-1 bg-blue-900/30 border border-blue-500/30 text-blue-400 
+                               text-xs rounded-full font-medium hover:bg-blue-500 hover:text-white hover:border-blue-500
                                transition-all duration-300"
                     >
                       {tech}
@@ -117,9 +117,9 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white 
-                             text-sm font-bold rounded-lg hover:from-purple-500 hover:to-blue-500 transition-all duration-300 
-                             shadow-lg hover:shadow-purple-500/50"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white 
+                             text-sm font-bold rounded-lg hover:from-blue-500 hover:to-blue-600 transition-all duration-300 
+                             shadow-lg hover:shadow-blue-500/50"
                   >
                     View Project
                     <svg
@@ -155,9 +155,9 @@ const Projects = () => {
             href="https://github.com/ArgjendKozhani"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-purple-500 
-                     text-purple-400 font-bold rounded-lg hover:bg-purple-500 hover:text-white 
-                     transition-all duration-300 shadow-lg hover:shadow-purple-500/50 w-full sm:w-auto"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border-2 border-blue-500 
+                     text-blue-400 font-bold rounded-lg hover:bg-blue-500 hover:text-white 
+                     transition-all duration-300 shadow-lg hover:shadow-blue-500/50 w-full sm:w-auto"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path
